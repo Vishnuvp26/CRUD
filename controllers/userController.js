@@ -55,7 +55,7 @@ const loginLoad = async (req, res) => {
   }
 };
 
-const veriyLogin = async (req, res) => {
+const verifyLogin = async (req, res) => {
   try {
     const email = req.body.email;
     const password = req.body.password;
@@ -149,7 +149,7 @@ module.exports = {
   loadRegister,
   insertUser,
   loginLoad,
-  veriyLogin,
+  verifyLogin,
   loadHome,
   userLogout,
   editProfile,

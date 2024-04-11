@@ -43,7 +43,7 @@ user_route.post("/register", upload.single("image"), userController.insertUser);
 
 user_route.get("/", auth.isLogout, userController.loginLoad);
 user_route.get("/login", auth.isLogout, userController.loginLoad);
-user_route.post("/login", userController.veriyLogin);
+user_route.post("/login", userController.verifyLogin);
 
 user_route.get("/home", auth.isLogin, userController.loadHome);
 
