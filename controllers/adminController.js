@@ -162,6 +162,7 @@ const deleteUser = async (req, res) => {
   try {
     const id = req.query.id;
     await User.deleteOne({ _id: id });
+    delete req.session.user_id
     res.redirect("/admin/dashboard");
   } catch (error) {
     res.send(error.message);
