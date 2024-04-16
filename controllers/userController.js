@@ -34,7 +34,7 @@ const insertUser = async (req, res) => {
 
     if (userData) {
       res.render("registration", {
-        message: "Your registration has been successfull!!",
+        message: "Your registration has been successfull",
       });
     } else {
       res.render("registration", {
