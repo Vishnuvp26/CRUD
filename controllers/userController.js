@@ -46,7 +46,7 @@ const insertUser = async (req, res) => {
   }
 };
 
-//login
+//login 
 const loginLoad = async (req, res) => {
   try {
     res.render("login");
