@@ -180,4 +180,4 @@ module.exports = {
   editUserLoad,
   updateUser,
   deleteUser,
-};
+};  
